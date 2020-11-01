@@ -8,7 +8,7 @@ const reducer = (state, action) => {
     case 'DELETE_FAVORITE':
       return {
         ...state,
-        mylist: state.mylist.filter((item) => item.id !== action.payload),
+        mylist: state.mylist.filter(item => item.id !== action.payload),
       };
     case 'LOGIN_REQUEST':
       return { ...state, user: action.payload };
@@ -26,8 +26,8 @@ const reducer = (state, action) => {
       return {
         ...state,
         playing:
-          state.trends.find((item) => item.id === Number(action.payload)) ||
-          state.original.find((item) => item.id === Number(action.payload)) ||
+          state.trends.find(item => item.id === Number(action.payload)) ||
+          state.original.find(item => item.id === Number(action.payload)) ||
           [],
       };
     case 'SEARCH_VIDEO':
@@ -39,7 +39,7 @@ const reducer = (state, action) => {
       }
       return {
         ...state,
-        search: state.trends.filter((items) => items.title.toLowerCase().includes(action.payload.toLowerCase())) || [],
+        search: state.trends.filter(items => items.title.toLowerCase().includes(action.payload.toLowerCase())) || [],
       };
     default:
       return state;

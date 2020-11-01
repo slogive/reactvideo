@@ -5,7 +5,11 @@ import { getVideoSource } from '../actions/index';
 import NotFound from './NotFound';
 
 const Player = (props) => {
-  const { id } = props.match.params;
+  const {
+    match: {
+      params: { id },
+    },
+  } = props;
   const { playing } = props;
   const hasPlaying = Object.keys(playing).length > 0;
 

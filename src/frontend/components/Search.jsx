@@ -34,8 +34,8 @@ const Search = (props) => {
       {hasSearch ? (
         <Categories title='Resultados' className={searchStyle}>
           <Carousel>
-            {search.map((items) => (
-              <Carouselitem key={items.id} {...items} />
+            {search.map(item => (
+              <Carouselitem key={item.id} {...item} />
             ))}
           </Carousel>
         </Categories>
