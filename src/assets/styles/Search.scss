@@ -3,13 +3,34 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 300px;
+  height: max-content;
+  width: 100vw;
   border-radius: 0px 0px 40px 40px;
 }
 
 .main__title {
   color: white;
   font-size: 25px;
+}
+
+.isHome {
+  width: 70%;
+}
+
+.inputSearch {
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  height: min-content;
+  margin-bottom: 30px;
+  outline: none;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
 }
 
 .input {
@@ -23,7 +44,6 @@
   margin-bottom: 20px;
   outline: none;
   padding: 0px 20px;
-  width: 70%;
 }
 
 ::placeholder {

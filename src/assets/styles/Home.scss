@@ -9,4 +9,6 @@ body {
 
 * {
   box-sizing: border-box;
+  scrollbar-width: thin !important;
+  scrollbar-color: transparent transparent !important;
 }
